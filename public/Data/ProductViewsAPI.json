@@ -45,6 +45,51 @@
             "views_5" : 42,
             "views_6" : 36,
             "views_7" : 52
+        },{
+            "id" : 6,
+            "views_1" : 10,
+            "views_2" : 20,
+            "views_3" : 7,
+            "views_4" : 53,
+            "views_5" : 25,
+            "views_6" : 30,
+            "views_7" : 12
+        },{
+            "id" : 7,
+            "views_1" : 20,
+            "views_2" : 20,
+            "views_3" : 25,
+            "views_4" : 50,
+            "views_5" : 47,
+            "views_6" : 70,
+            "views_7" : 30
+        },{
+            "id" : 8,
+            "views_1" : 5,
+            "views_2" : 20,
+            "views_3" : 60,
+            "views_4" : 78,
+            "views_5" : 57,
+            "views_6" : 63,
+            "views_7" : 50
+        },{
+            "id" : 9,
+            "views_1" : 35,
+            "views_2" : 45,
+            "views_3" : 60,
+            "views_4" : 66,
+            "views_5" : 40,
+            "views_6" : 47,
+            "views_7" : 35
+        },{
+            "id" : 10,
+            "views_1" : 25,
+            "views_2" : 60,
+            "views_3" : 90,
+            "views_4" : 82,
+            "views_5" : 42,
+            "views_6" : 36,
+            "views_7" : 52
         }
     ]
 }
