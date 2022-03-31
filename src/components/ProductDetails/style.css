@@ -1,0 +1,154 @@
+.container{
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+.container h1{
+    padding: 0;
+}
+.container .heading{
+    width: 100%;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+.heading .icon{
+    font-size: 2rem;
+    margin-right: 1rem;
+    cursor: pointer;
+}
+.container .product-fullwidth{
+    width: 100%;
+    margin-top: 3rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+.product-fullwidth .upper-part{
+    width: 100%;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+.upper-part .fullwidth-image{
+    width: 50%;
+}
+.fullwidth-image img{
+    width: 100%;
+    height: 500px;
+    object-fit: contain;
+}
+.upper-part .fullwidth-details{
+    width: 50%;
+    height: 500px;
+    padding-left: 1rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+.fullwidth-details .product-desc{
+    max-width: 400px;
+    margin: 1rem 0;
+}
+.fullwidth-details .price-tag p del{
+    color: rgba(0,0,0,0.5);
+}
+.fullwidth-details .quantity{
+    margin-top: 2rem;
+}
+.fullwidth-details .button-box{
+    width: 100%;
+    max-width: 300px;
+    margin-top: 2rem;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.button-box button{
+    width: 45%;
+    padding: 1rem;
+    font-size: 1rem;
+    font-weight: 700;
+
+    border: none;
+    color: #fff;
+    background-color: rgb(69, 155, 252);
+    cursor: pointer;
+}
+.button-box .cart-but{
+    background-color: rgba(131, 130, 130, 0.5);
+    color: rgba(0,0,0,0.5);
+}
+.button-box .cart-but:hover{
+    background-color: rgba(161, 161, 161, 0.5);
+}
+.button-box .order-but:hover{
+    background-color: rgb(30, 132, 248);
+}
+
+.product-fullwidth .bottom-part{
+    width: 100%;
+    margin-top: 1rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.bottom-part h2{
+    width: 100%;
+}
+.bottom-part .bar-graph{
+    width: 700px;
+    margin-top: 2rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width : 600px){
+    .container{
+        padding: 1rem;
+    }
+    .product-fullwidth .upper-part{
+        flex-direction: column;
+    }
+    .upper-part .fullwidth-image{
+        width: 100%;
+        padding: 1rem;
+    }    
+    .upper-part .fullwidth-details{
+        width: 100%;
+        height: 400px;
+        padding: 0;
+    }
+    .fullwidth-details .button-box{
+        max-width: none;
+        padding: 1rem 0;
+        background-color: #fff;
+
+        justify-content: space-around;
+
+        position: fixed;
+        bottom: 0;
+        left: 0;
+    }
+    .bottom-part .bar-graph{
+        width: 300px;
+        margin-bottom: 3rem;
+    }
+}
