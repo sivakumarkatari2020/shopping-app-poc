@@ -8,7 +8,8 @@
             "quantity" : 20,
             "desc" : "Great outerwear jackets for Spring/Autumn/Winter, suitable for many occasions, such as working, hiking, camping, mountain/rock climbing, cycling, traveling or other outdoors. Good gift choice for you or your family member. A warm hearted love to Father, husband or son in this thanksgiving or Christmas Day.",
             "viewsId" : 1,
-            "imageId" : 1
+            "imageId" : 1,
+            "category" : "cloth"
         },{
             "productId" : 2,
             "name" : "Mens Casual Slim Fit",
@@ -17,7 +18,8 @@
             "quantity" : 10,
             "desc" : "The color could be slightly different between on the screen and in practice. / Please note that body builds vary by person, therefore, detailed size information should be reviewed below on the product description.",
             "viewsId" : 2,
-            "imageId" : 2
+            "imageId" : 2,
+            "category" : "cloth"
         },{
             "productId" : 3,
             "name" : "White Gold Plated Princess",
@@ -26,7 +28,8 @@
             "quantity" : 5,
             "desc" : "Classic Created Wedding Engagement Solitaire Diamond Promise Ring for Her. Gifts to spoil your love more for Engagement, Wedding, Anniversary, Valentine's Day...",
             "viewsId" : 3,
-            "imageId" : 3
+            "imageId" : 3,
+            "category" : "jewellery"
         },{
             "productId" : 4,
             "name" : "Samsung Gaming Monitor",
@@ -35,7 +38,8 @@
             "quantity" : 50,
             "desc" : "49 INCH SUPER ULTRAWIDE 32:9 CURVED GAMING MONITOR with dual 27 inch screen side by side QUANTUM DOT (QLED) TECHNOLOGY, HDR support and factory calibration provides stunningly realistic and accurate color and contrast 144HZ HIGH REFRESH RATE and 1ms ultra fast response time work to eliminate motion blur, ghosting, and reduce input lag",
             "viewsId" : 4,
-            "imageId" : 4
+            "imageId" : 4,
+            "category" : "device"
         },{
             "productId" : 5,
             "name" : "Women's Short Sleeve",
@@ -44,7 +48,8 @@
             "quantity" : 10,
             "desc" : "100% Polyester, Machine wash, 100% cationic polyester interlock, Machine Wash & Pre Shrunk for a Great Fit, Lightweight, roomy and highly breathable with moisture wicking fabric which helps to keep moisture away, Soft Lightweight Fabric with comfortable V-neck collar and a slimmer fit, delivers a sleek, more feminine silhouette and Added Comfort",
             "viewsId" : 5,
-            "imageId" : 5
+            "imageId" : 5,
+            "category" : "cloth"
         },{
             "productId" : 6,
             "name" : "Foldsack No. 1 Backpack",
@@ -53,7 +58,8 @@
             "quantity" : 25,
             "desc" : "Your perfect pack for everyday use and walks in the forest. Stash your laptop (up to 15 inches) in the padded sleeve, your everyday",
             "viewsId" : 6,
-            "imageId" : 6
+            "imageId" : 6,
+            "category" : "Essentials"
         },{
             "productId" : 7,
             "name" : "Portable External Hard Drive",
@@ -62,7 +68,8 @@
             "quantity" : 3,
             "desc" : "USB 3.0 and USB 2.0 Compatibility Fast data transfers Improve PC Performance High Capacity; Compatibility Formatted NTFS for Windows 10, Windows 8.1, Windows 7; Reformatting may be required for other operating systems; Compatibility may vary depending on user’s hardware configuration and operating system",
             "viewsId" : 7,
-            "imageId" : 7
+            "imageId" : 7,
+            "category" : "device"
         },{
             "productId" : 8,
             "name" : "Women's Chain Bracelet",
@@ -71,7 +78,8 @@
             "quantity" : 8,
             "desc" : "From our Legends Collection, the Naga was inspired by the mythical water dragon that protects the ocean's pearl. Wear facing inward to be bestowed with love and abundance, or outward for protection.",
             "viewsId" : 8,
-            "imageId" : 8
+            "imageId" : 8,
+            "category" : "jewellery"
         },{
             "productId" : 9,
             "name" : "Women's Snowboard Jacket Winter Coats",
@@ -80,7 +88,8 @@
             "quantity" : 50,
             "desc" : "The Jackets is US standard size, Please choose size as your usual wear Material: 100% Polyester; Detachable Liner Fabric: Warm Fleece. Detachable Functional Liner: Skin Friendly, Lightweigt and Warm.Stand Collar Liner jacket, keep you warm in cold weather. Zippered Pockets: 2 Zippered Hand Pockets, 2 Zippered Pockets on Chest (enough to keep cards or keys)and 1 Hidden Pocket Inside.Zippered Hand Pockets and Hidden Pocket keep your things secure. Humanized Design: Adjustable and Detachable Hood and Adjustable cuff to prevent the wind and water,for a comfortable fit. 3 in 1 Detachable Design provide more convenience, you can separate the coat and inner as needed, or wear it together. It is suitable for different season and help you adapt to different climates",
             "viewsId" : 9,
-            "imageId" : 9
+            "imageId" : 9,
+            "category" : "cloth"
         },{
             "productId" : 10,
             "name" : "Womens Casual Cotton T Shirt",
@@ -89,7 +98,8 @@
             "quantity" : 1,
             "desc" : "95%Cotton,5%Spandex, Features: Casual, Short Sleeve, Letter Print,V-Neck,Fashion Tees, The fabric is soft and has some stretch., Occasion: Casual/Office/Beach/School/Home/Street. Season: Spring,Summer,Autumn,Winter.",
             "viewsId" : 10,
-            "imageId" : 10
+            "imageId" : 10,
+            "category" : "cloth"
         }
     ]
 }

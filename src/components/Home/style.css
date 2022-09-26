@@ -16,8 +16,16 @@
     justify-content: flex-start;
     align-items: center;
 }
-.product-inner .search-box{
+.product-inner .wrapper{
     width: 100%;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.product-inner .search-box{
+    width: 70%;
     padding: 1rem;
     display: flex;
     flex-direction: row;
@@ -29,8 +37,8 @@
     padding: 1rem;
     font-size: 1.1rem;
     border: none;
-    border-radius: 10px 0 0 10px;
     background-color: rgba(228, 251, 252, 0.5);
+    outline: none;
 }
 .search-box .search-button{
     width: 10%;
@@ -38,13 +46,121 @@
     font-size: 1.1rem;
     font-weight: bold;
     border: none;
-    border-radius: 0 10px 10px 0;
     color: rgba(60, 64, 67, 0.3);
     background-color: rgba(228, 251, 252, 0.5);
 }
-.product-list{
+.sort-box{
+    width: 30%;
+    padding: 1rem;
+    background-color: rgba(228, 251, 252, 0.5);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.sort-box select{
+    outline: none;
+    border: none;
+    background-color: rgba(228, 251, 252, 0.5);
+}
+.sort-box select option p{
+    padding: .5rem;
+}
+
+@media (max-width : 800px){
+    .product-inner .search-box{
+        width: 60%;
+    }
+    .sort-box{
+        width: 40%;
+    }
+}
+@media (max-width:600px){
+    .product-inner .wrapper{
+        flex-direction: column;
+    }
+    .product-inner .search-box{
+        width: 100%;
+    }
+    .sort-box{
+        width: 100%;
+    }
+}
+
+.products-wrapper{
     width: 100%;
     margin-top: 1rem;
+
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+.sidebar{
+    width: 25%;
+    height: auto;
+    padding: 1rem;
+    background-color: rgba(228, 251, 252, 0.5);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+.filter{
+    width: 100%;
+    margin: 1rem 0;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+.filter > p{
+    font-size: 1.2rem;
+    margin-bottom: .5rem;
+}
+.filter .price-holder{
+    width: 100%;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.price-holder span{
+    font-size: .9rem;
+}
+.price-holder input{
+    width: 100px;
+    padding: .5rem;
+}
+.categ-holder{
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+.categ-holder .checklist{
+    width: 100%;
+    margin: .5rem 0;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-self: flex-start;
+}
+.checklist input{
+    width: 20px;
+    height: 20px;
+}
+.checklist p{
+    margin-left: 1rem;
+}
+
+.product-list{
+    width: 70%;
 
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -54,10 +170,9 @@
     max-width: 300px;
     height: 300px;
     margin: 1rem;
+    margin-top: 0;
     text-decoration: none;
 
-    border-radius: 10px;
-    background-color: rgba(228, 251, 252, 0.5);
     box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
 
     display: flex;
@@ -66,7 +181,7 @@
     align-items: center;
 }
 .product-list .list-item:hover{
-    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 10px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
 }
 .list-item .item-details{
     width: 100%;
@@ -103,11 +218,20 @@
     color: rgba(60, 64, 67, 0.3);
 }
 
+@media (max-width : 1200px){
+    .product-list{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .text-details h3{
+        width: auto;
+    }
+}
 
 @media (max-width : 800px){
     .product-list{
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
     }
     .product-list .list-item{
         width: 200px;
@@ -123,15 +247,20 @@
         padding: 0;
         margin: 0;
     }
+    .sidebar{
+        display: none;
+    }
     .product-list{
+        width: 100%;
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr;
     }
     .product-list .list-item{
         width: 100%;
-        max-width: 250px;
-        height: 350px;
+        max-width: 400px;
+        height: 400px;
         margin: 0;
+        margin-bottom: 1rem;
         border-radius: 0;
     }
     .list-item .item-details{
