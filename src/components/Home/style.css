@@ -107,6 +107,11 @@
     align-items: center;
     justify-content: flex-start;
 }
+@media (max-width : 1200px){
+    .sidebar{
+        width: 30%;
+    }
+}
 .filter{
     width: 100%;
     margin: 1rem 0;
@@ -122,6 +127,7 @@
 }
 .filter .price-holder{
     width: 100%;
+    max-width: 200px;
 
     display: flex;
     flex-direction: row;
@@ -132,7 +138,7 @@
     font-size: .9rem;
 }
 .price-holder input{
-    width: 100px;
+    width: 70px;
     padding: .5rem;
 }
 .categ-holder{

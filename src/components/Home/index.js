@@ -102,28 +102,33 @@ function Home() {
         }
     }
 
-    const handleMin = (e) => {
-        let val = Number(e.target.value);
-        setMin(val);
-
-        if(val >= 0){
-            let list = original.filter(product => product !== null);
-            let newList = list.filter(product => product.price >= min && product.price <= max);
-            setFilteredProds(newList);
-        }
-    }
-
-    const handleMax = (e) => {
-        let val = Number(e.target.value);
-        setMax(val);
-
-        if(val <= 10000 && val > 100){
+    const handleRange = () => {
+        if(max <= 10000 && min >= 0 && max > 100 && min < 10000){
             let list = products.filter(product => product !== null);
             let newList = list.filter(product => product.price >= min && product.price <= max);
             console.log(newList);
             setFilteredProds(newList);
         }
     }
+
+    const handleMin = (e) => {
+        let val = Number(e.target.value);
+        setMin(val);
+    }
+
+    const handleMax = (e) => {
+        let val = Number(e.target.value);
+        setMax(val);
+    }
+
+    React.useEffect(()=>{
+        if(max <= 10000 && min >= 0 && max > 100 && min < 10000){
+            let list = products.filter(product => product !== null);
+            let newList = list.filter(product => product.price >= min && product.price <= max);
+            console.log(newList);
+            setFilteredProds(newList);
+        }
+    },[min,max,products]);
 
     const handleCateg = (val) => {
         if(val === 'cloth'){
@@ -137,6 +142,10 @@ function Home() {
         }else if(val === 'device'){
             let list = products.filter(product => product !== null);
             let newList = list.filter(product => product.category === 'device');
+            setFilteredProds(newList);
+        }else{
+            let list = products.filter(product => product !== null);
+            let newList = list.filter(product => product.price >= min && product.price <= max);
             setFilteredProds(newList);
         }
     }
@@ -174,14 +183,18 @@ function Home() {
                                 <div className='filter'>
                                     <p>Price Range</p>
                                     <div className='price-holder'>
-                                        <input type="number" value={min} onInput={handleMin} placeholder='Min'></input>
+                                        <input type="number" value={min} onChange={(e) => handleMin(e)} placeholder='Min'></input>
                                         <span>to</span>
-                                        <input type="number" value={max} onInput={handleMax} placeholder='Max'></input>
+                                        <input type="number" value={max} onChange={(e) => handleMax(e)} placeholder='Max'></input>
                                     </div>
                                 </div>
                                 <div className='filter'>
                                     <p>Category</p>
                                     <div className='categ-holder'>
+                                        <div className='checklist'>
+                                            <input type='radio' value='all' name='categ' onChange={()=>handleCateg('all')}></input>
+                                            <p>All</p>
+                                        </div>
                                         <div className='checklist'>
                                             <input type='radio' value='cloth' name='categ' onChange={()=>handleCateg('cloth')}></input>
                                             <p>Clothes</p>
